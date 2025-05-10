@@ -1,1367 +1,2652 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Core 360 Solutionz - Premium Trading Plans for Indian Traders</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<script>
-    tailwind.config = {
-        theme: {
-            fontFamily: {
-                'sans': ['Inter', 'Segoe UI', 'Arial', 'sans-serif'],
-            },
-            extend: {
-                colors: {
-                    primary: '#274bdb', // Royal Blue
-                    emerald: '#00b894', // Emerald Green
-                    gold: '#ffd600',    // Gold
-                    secondary: '#274bdb',
-                    accent: '#ffd600',
-                    bgsection: '#1a237e',
-                },
-                borderRadius: {
-                    'none': '0px',
-                    'sm': '4px',
-                    DEFAULT: '12px',
-                    'md': '16px',
-                    'lg': '20px',
-                    'xl': '28px',
-                    '2xl': '36px',
-                    '3xl': '48px',
-                    'full': '9999px',
-                    'button': '16px'
-                },
-                boxShadow: {
-                    'soft': '0 4px 24px 0 rgba(30, 42, 120, 0.08)',
-                },
-            }
-        }
-    }
-</script>
-    <style>
-        :where([class^="ri-"])::before { content: "\f3c2"; }
-        body {
-            background: linear-gradient(135deg, #274bdb 0%, #1a237e 100%);
-            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-            box-shadow: 0 0 80px 0 #274bdb inset;
-            color: #fff;
-        
-        }
-        header {
-            background: #1a237e;
-            box-shadow: 0 4px 24px 0 rgba(30,42,120,0.08);
-        }
-        .container, .service-card, .plan-card {
-            box-shadow: 0 4px 24px 0 rgba(30,42,120,0.08);
-        }
-        nav a, .service-card a, .plan-card a {
-            font-weight: 600;
-        }
-        .service-card, .plan-card {
-            background: #fff;
-            border-radius: 20px;
-            transition: box-shadow 0.2s;
-        }
-        .service-card:hover, .plan-card:hover {
-            box-shadow: 0 8px 32px 0 rgba(30,42,120,0.16);
-        }
-        section {
-            background: linear-gradient(135deg, #274bdb 0%, #1a237e 100%);
-            box-shadow: 0 0 60px 0 #274bdb inset;
-            color: #fff;
-        
-        }
-        h2, h3, h4, h5, h6 {
-            color: #fff;
-            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-        }
-        .bg-primary, .text-primary {
-            background: #1a237e !important;
-            color: #fff !important;
-        }
-        .bg-emerald, .text-emerald {
-            background: #00b894 !important;
-            color: #fff !important;
-        }
-        .bg-gold, .text-gold {
-            background: #ffd600 !important;
-            color: #1a237e !important;
-        }
-        .btn, button, .rounded-button {
-            border-radius: 16px !important;
-            font-weight: 700 !important;
-            background: linear-gradient(90deg, #00b894 0%, #ffd600 100%);
-            color: #1a237e !important;
-            box-shadow: 0 2px 8px 0 rgba(30,42,120,0.08);
-            transition: background 0.2s, color 0.2s;
-        }
-        .btn, button, .rounded-button, .plan-card a, .service-card a {
-            color: #1a237e !important;
-        }
-        .btn:hover, button:hover, .rounded-button:hover {
-            background: linear-gradient(90deg, #ffd600 0%, #00b894 100%);
-            color: #fff !important;
-        }
-        .btn:hover, button:hover, .rounded-button:hover {
-            background: linear-gradient(90deg, #ffd600 0%, #00b894 100%);
-            color: #fff !important;
-        }
-        footer {
-            background: linear-gradient(90deg, #1a237e 80%, #00b894 100%);
-            color: #fff;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header Section</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#395C6B',secondary:'#F94144',neutral:'#F5F5F5',highlight:'#90BE6D'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Montserrat', sans-serif;
+color: #183B4E;
+scroll-behavior: smooth;
+}
 
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideInUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        
-        @keyframes scaleIn {
-            from {
-                transform: scale(0.9);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease forwards;
-        }
-        
-        .animate-slide-up {
-            animation: slideInUp 0.8s ease forwards;
-        }
-        
-        .animate-scale-in {
-            animation: scaleIn 0.8s ease forwards;
-        }
-        
-        .counter-value {
-            transition: all 2s ease;
-        }
-        /* Embossed, puffed effect for brand */
-        .embossed-brand {
-            color: #00b894;
-            background: linear-gradient(90deg, #00b894 60%, #00916e 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 900;
-            text-shadow:
-                0 2px 8px #fff,
-                0 0 2px #00916e,
-                0 1px 12px #fff,
-                1px 2px 6px rgba(0,0,0,0.30),
-                0 0 0.5px #00916e;
-            letter-spacing: 2px;
-        }
-        
-        .hero-slide {
-            transition: opacity 0.8s ease;
-            opacity: 0;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .hero-slide.active {
-            opacity: 1;
-            z-index: 1;
-        }
-        
-        .company-slide {
-            transition: all 0.5s ease;
-            opacity: 0;
-            transform: translateX(50px);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .company-slide.active {
-            opacity: 1;
-            transform: translateX(0);
-            z-index: 1;
-        }
-        
-        .plan-card {
-            transition: all 0.3s ease;
-        }
-        
-        .plan-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .service-card {
-            transition: all 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        input, select, textarea {
-            outline: none;
-        }
-        
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        
-        /* Custom Switch */
-        .switch-input {
-            display: none;
-        }
-        
-        .switch-label {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 26px;
-            background-color: #e2e8f0;
-            border-radius: 13px;
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-        
-        .switch-label:after {
-            content: '';
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            background-color: white;
-            top: 2px;
-            left: 2px;
-            transition: all 0.3s;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-        }
-        
-        .switch-input:checked + .switch-label {
-            background-color: #0047AB;
-        }
-        
-        .switch-input:checked + .switch-label:after {
-            left: 26px;
-        }
-    </style>
+/* Header Navigation Animations */
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link:hover, .nav-item:hover, .nav-link:focus, .nav-item:focus {
+    color: #F94144 !important;
+    transition: color 0.3s;
+}
+/* Call Now Button Animation */
+.call-now-btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, var(--tw-gradient-from), var(--tw-gradient-to));
+  --tw-gradient-from: #395C6B;
+  --tw-gradient-to: #2a4550;
+}
+.call-now-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: shimmer 2s infinite linear;
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.call-now-btn:hover::before {
+  animation-duration: 1s;
+}
+.call-now-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.call-now-btn {
+  position: relative;
+  overflow: hidden;
+}
+.call-now-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+.call-now-btn:hover::before {
+  width: 300%;
+  height: 300%;
+}
+/* Hamburger Menu Animation */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #183B4E;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.98);
+}
+.mobile-menu.show {
+  transform: translateX(0);
+}
+.nav-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.mobile-menu.show .nav-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 0.75;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.advanced-cta-btn {
+  background: linear-gradient(120deg, #395C6B, #264653  , #395C6B);
+  background-size: 200% 100%;
+  border: 2px solid transparent;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 20px rgba(57, 92, 107, 0.3);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 0 0 25px rgba(249, 65, 68, 0.3);
+  }
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 20px rgba(57, 92, 107, 0.3);
+  }
+}
+.advanced-cta-btn .cta-glow {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%);
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.advanced-cta-btn:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(249, 65, 68, 0.5);
+}
+.advanced-cta-btn:hover .cta-glow {
+  opacity: 1;
+}
+.advanced-cta-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px -5px rgba(249, 65, 68, 0.3);
+}
+@keyframes subtle-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+.services-dropdown-wrapper {position: relative;}
+.services-dropdown {
+  min-width: 260px;
+  box-shadow: 0 8px 32px 0 rgba(60,60,120,0.10), 0 1.5px 9px 0 #F9414422;
+  border-radius: 1.25rem;
+  border: 1px solid #f1f2f6;
+  background: linear-gradient(120deg, #fff 60%, #f2f6ff 100%);
+  background-size: 200% 200%;
+  animation: dropdown-bg-move 2.5s ease-in-out infinite alternate;
+  backdrop-filter: blur(16px) saturate(1.2);
+  transform-origin: top center;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+  position: relative;
+  margin-top: 0.5rem !important; /* Reduced from 0.75rem (mt-3) to 0.5rem for closer position */
+}
+.services-dropdown::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  background: radial-gradient(ellipse at 20% 20%, #FF6B6B22 0%, transparent 70%), radial-gradient(ellipse at 80% 80%, #4F8CFF22 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.7;
+  animation: dropdown-glow 3s ease-in-out infinite alternate;
+}
+@keyframes dropdown-bg-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@keyframes dropdown-glow {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+.services-dropdown .dropdown-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(18px) scale(0.98);
+  animation: dropdown-item-in 0.6s cubic-bezier(.4,0,.2,1) forwards;
+}
+.services-dropdown .dropdown-item:nth-child(1) {
+  animation-delay: 0.12s;
+}
+.services-dropdown .dropdown-item:nth-child(2) {
+  animation-delay: 0.22s;
+}
+@keyframes dropdown-item-in {
+  0% { opacity: 0; transform: translateY(18px) scale(0.98); }
+  60% { opacity: 1; transform: translateY(-6px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.services-dropdown .dropdown-item:hover {
+  background: linear-gradient(90deg, #f8fafc 70%, #e8f0ff 100%);
+  box-shadow: 0 4px 18px 0 #4f8cff22, 0 0.5px 9px 0 #ff6b6b22;
+  transform: translateY(-2px) scale(1.035);
+  z-index: 3;
+}
+.services-dropdown .dropdown-item:hover i {
+  filter: drop-shadow(0 0 16px #395C6Bcc) drop-shadow(0 0 8px #F9414488);
+  color: #395C6B;
+  transition: filter 0.3s, color 0.3s;
+}
+.services-dropdown .dropdown-item i {
+  filter: drop-shadow(0 0 8px #395C6B44);
+  transition: filter 0.4s cubic-bezier(.4,0,.2,1), color 0.4s cubic-bezier(.4,0,.2,1);
+}
+.services-dropdown .dropdown-item span {
+  transition: color 0.3s cubic-bezier(.4,0,.2,1), letter-spacing 0.3s cubic-bezier(.4,0,.2,1);
+}
+.services-dropdown .dropdown-item:hover span {
+  color: #F94144;
+  letter-spacing: 0.5px;
+}
+/* Dropdown visible state on hover */
+.services-dropdown-wrapper:hover .services-dropdown,
+.services-dropdown-wrapper:focus-within .services-dropdown,
+.services-dropdown-wrapper:active .services-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+.services-dropdown {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.98) translateY(8px);
+}
+/* Responsive: Hide dropdown on mobile, show on md+ only */
+@media (max-width: 767px) {
+  .services-dropdown { display: none !important; }
+}
+
+</style>
 </head>
-<body class="font-sans bg-gradient-to-br from-[#274bdb] to-[#1a237e]">
-    <!-- Header -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="#" class="flex items-center">
-  <span class="text-4xl font-extrabold tracking-wide embossed-brand" style="font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif; letter-spacing: 2px;">Core 360 Solutionz</span>
-</a>
-            
-            <nav class="hidden md:flex items-center space-x-8 font-extrabold" style="font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif; font-weight: 900; font-size: 1.15rem;">
-                <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
-                <div class="relative group" id="services-dropdown-container">
-    <a href="#services" id="services-dropdown-toggle" class="text-gray-700 hover:text-primary font-medium transition-colors cursor-pointer" tabindex="0" aria-haspopup="true" aria-expanded="false">Services <i class="ri-arrow-down-s-line ml-1"></i></a>
-    <div id="services-dropdown" class="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto focus-within:opacity-100 focus-within:pointer-events-auto transition-opacity duration-200 z-50" style="min-width:220px;">
-        <ul class="py-2">
-            <li class="relative" id="investment-management-container">
-                <a href="#" id="investment-management-toggle" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary flex items-center justify-between cursor-pointer" tabindex="0">
-                    Investment Management
-                    <i class="ri-arrow-right-s-line ml-2"></i>
+<body>
+    <!-- Header - Fixed navigation bar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-1 py-1">
+            <!-- Mobile Header (md:hidden) -->
+            <div class="flex md:hidden justify-between items-center py-3 h-16 relative">
+                <!-- Logo Section (Center) -->
+                <div class="flex-1"></div>
+                <a href="https://core360solutionz.com" class="flex items-center group focus:outline-none mx-auto absolute left-1/2 -translate-x-1/2">
+                    <img src="https://www.dropbox.com/scl/fi/ivw7yrub5z0r477iv9d0u/Core360solutionz_Logo_-removebg-preview.png?rlkey=fnb27ww26s6kqcurp5e31pe47&st=5anb4zbp&raw=1" alt="Core360 Solutionz Logo" class="h-14 w-auto object-contain -my-2" style="max-width:120px;">
                 </a>
-                <ul id="investment-management-submenu" class="absolute left-full top-0 mt-0 ml-2 w-64 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-                    <li><a href="service-investment-management.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Overview</a></li>
-                    <li><a href="service-investment-management.html#trading-excellence" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Our Trading Excellence</a></li>
-                    <li><a href="service-investment-management.html#plans-pricing" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Trading Plans & Pricing</a></li>
-                </ul>
-            </li>
-                            <li><a href="service-financial-services.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Financial Services</a></li>
-                            <li><a href="service-it-services.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">IT Services</a></li>
-                            <li><a href="service-recruitment-services.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Recruitment Services</a></li>
-                            <li><a href="service-shipping-logistic.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Shipping & Logistic Services</a></li>
-                            <li><a href="service-web-designing.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Web Designing</a></li>
-                            <li><a href="service-digital-marketing.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Digital Marketing</a></li>
-                            <li><a href="service-real-estate.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Real Estate Services</a></li>
-                            <li><a href="service-call-center-setup.html" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Call Center Setup</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="relative group">
-                    <a href="#pricing" class="text-gray-700 hover:text-primary font-medium transition-colors flex items-center">
-                        Pricing <i class="ri-arrow-down-s-line ml-1"></i>
-                    </a>
-                    <div class="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition-opacity duration-200 z-50">
-                        <ul class="py-2">
-                            <li><a href="service-investment-management.html#monthly-plans" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Monthly Plans</a></li>
-                            <li><a href="service-investment-management.html#quarterly-plans" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Quarterly Plans</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About Us</a>
-                <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
-            </nav>
-            
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="tel:+912231827792" class="px-5 py-2 bg-primary text-white hover:bg-primary/90 transition-colors font-medium !rounded-button whitespace-nowrap flex items-center">
-                    <i class="ri-phone-line mr-2"></i> Call Now: (22) 318-27-792
-                </a>
+                <!-- Hamburger Menu (Right) -->
+                <button id="menu-btn" class="hamburger focus:outline-none z-50 mr-4">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
             </div>
-            
-            <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobile-menu-button">
-                <i class="ri-menu-line text-2xl"></i>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div class="md:hidden bg-white absolute w-full left-0 top-full shadow-md hidden transition-all" id="mobile-menu">
-            <div class="container mx-auto px-4 py-3">
-                <nav class="flex flex-col space-y-4 py-4">
-                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About Us</a>
-                    <div class="w-full">
-                        <input type="checkbox" id="mobile-services-toggle" class="hidden peer" />
-                        <label for="mobile-services-toggle" class="flex items-center justify-between cursor-pointer text-gray-700 font-medium w-full py-2">
-                            <span>Services</span>
-                            <i class="ri-arrow-down-s-line ml-1"></i>
-                        </label>
-                        <div class="hidden peer-checked:block flex flex-col ml-4 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg">
-                            <div class="flex flex-col">
-                                <a href="service-investment-management.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Investment Management</a>
-                                <div class="ml-4 flex flex-col mt-1">
-                                    <a href="service-investment-management.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-xs">Overview</a>
-                                    <a href="service-investment-management.html#trading-excellence" class="text-gray-700 hover:text-primary font-medium transition-colors text-xs">Our Trading Excellence</a>
-                                    <a href="service-investment-management.html#plans-pricing" class="text-gray-700 hover:text-primary font-medium transition-colors text-xs">Trading Plans & Pricing</a>
-                                </div>
-                            </div>
-                            <a href="service-financial-services.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Financial Services</a>
-                            <a href="service-it-services.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">IT Services</a>
-                            <a href="service-recruitment-services.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Recruitment Services</a>
-                            <a href="service-shipping-logistic.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Shipping & Logistic Services</a>
-                            <a href="service-web-designing.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Web Designing</a>
-                            <a href="service-digital-marketing.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Digital Marketing</a>
-                            <a href="service-real-estate.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Real Estate Services</a>
-                            <a href="service-call-center-setup.html" class="text-gray-700 hover:text-primary font-medium transition-colors text-sm">Call Center Setup</a>
-                        </div>
-                    </div>
-                    <div class="w-full">
-                        <input type="checkbox" id="mobile-trading-plans-toggle" class="hidden peer" />
-                        <label for="mobile-trading-plans-toggle" class="flex items-center justify-between cursor-pointer text-gray-700 hover:text-primary font-medium transition-colors w-full py-2">
-                            <span>Our Trading Plans</span>
-                            <i class="ri-arrow-down-s-line ml-1"></i>
-                        </label>
-                        <div class="hidden peer-checked:block bg-white border border-gray-200 rounded-lg shadow-lg mt-1">
-                            <ul class="py-2">
-                                <li><a href="service-investment-management.html#monthly-plans" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Monthly Plans</a></li>
-                                <li><a href="service-investment-management.html#quarterly-plans" class="block px-6 py-2 text-gray-700 hover:bg-primary/10 hover:text-primary">Quarterly Plans</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
-                </nav>
+            <!-- Desktop Header (hidden md:flex) -->
+            <div class="hidden md:flex justify-between items-center">
+                <!-- Logo Section - Brand Identity -->
+                <div class="flex items-center">
+                    <!-- Shield Icon in Primary Color Circle -->
+                    <div class="logo-crop flex items-center group focus:outline-none overflow-hidden ml-8" style="height:48px; max-width:180px;">
+  <a href="https://core360solutionz.com">
+    <img src="https://www.dropbox.com/scl/fi/ivw7yrub5z0r477iv9d0u/Core360solutionz_Logo_-removebg-preview.png?rlkey=fnb27ww26s6kqcurp5e31pe47&st=5anb4zbp&raw=1" alt="Core360 Solutionz Logo" class="h-[40px] md:h-[56px] w-auto object-contain" style="max-width:100px;">
+  </a>
 </div>
-  <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
-</nav>
-                
-                <div class="flex py-4">
-    <a href="tel:+912231827792" class="flex-1 px-5 py-2 bg-primary text-white hover:bg-primary/90 transition-colors font-medium !rounded-button whitespace-nowrap flex items-center justify-center">
-        <i class="ri-phone-line mr-2"></i> Call Now: (22) 318-27-792
+                </div>
+                <!-- Desktop Navigation - Hidden on Mobile (md:flex) -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <!-- Navigation Links with Hover Effects -->
+                    <a href="https://core360solutionz.com" class="nav-link text-gray-700 font-medium">Home</a>
+                    <div class="relative group services-dropdown-wrapper">
+  <button class="nav-link text-gray-700 font-medium flex items-center gap-1 focus:outline-none group-hover:text-primary transition-colors duration-300">
+    <span>Services</span>
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+  </button>
+  <div class="services-dropdown absolute left-0 mt-3 w-72 bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-100 opacity-0 pointer-events-none scale-95 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:scale-100 transition-all duration-400 z-50">
+    <a href="https://core360solutionz.com/services#investment" class="dropdown-item flex items-center gap-4 px-6 py-4 hover:bg-[#f8f9fa] rounded-xl transition-colors duration-300">
+      <i class="ri-line-chart-line text-3xl text-primary drop-shadow-glow animate-dropdown-in"></i>
+      <span class="text-lg font-semibold text-gray-800">Investment Services</span>
     </a>
+    <a href="https://core360solutionz.com/services#recruitment" class="dropdown-item flex items-center gap-4 px-6 py-4 hover:bg-[#f8f9fa] rounded-xl transition-colors duration-300">
+      <i class="ri-user-search-line text-3xl text-primary drop-shadow-glow animate-dropdown-in" style="animation-delay:0.08s"></i>
+      <span class="text-lg font-semibold text-gray-800">Recruitment Service</span>
+    </a>
+  </div>
 </div>
+                    <a href="https://core360solutionz.com/pricing" class="nav-link text-gray-700 font-medium">Pricing</a>
+                    
+                    <a href="https://core360solutionz.com/about" class="nav-link text-gray-700 font-medium">About Us</a>
+                    <a href="https://core360solutionz.com/contact" class="nav-link text-gray-700 font-medium">Contact Us</a>
+                </nav>
+                <!-- Call-to-Action Buttons - Desktop Only -->
+                <div class="hidden md:flex items-center space-x-4 mr-4">
+                    <!-- Phone Number with Icon -->
+                    <a href="tel:+917700096660" class="advanced-cta-btn px-4 py-2 rounded-lg text-sm text-white font-semibold relative overflow-hidden mr-6">
+                      <div class="cta-glow"></div>
+                      <span class="relative z-10">Call Now</span>
+                    </a>
+                    <!-- Primary CTA Button -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu - Slides in from right with particle effects -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-full md:hidden">
+            <div class="container h-full mx-auto px-6 py-8 flex flex-col">
+                <!-- Company Name at Top -->
+                <div class="flex items-center mb-4 pb-4 border-b border-gray-200">
+                    <a href="https://core360solutionz.com" class="flex items-center group focus:outline-none mx-auto">
+    <img src="https://www.dropbox.com/scl/fi/ivw7yrub5z0r477iv9d0u/Core360solutionz_Logo_-removebg-preview.png?rlkey=fnb27ww26s6kqcurp5e31pe47&st=5anb4zbp&raw=1" alt="Core360 Solutionz Logo" class="h-14 w-auto object-contain -my-2" style="max-width:120px;">
+</a>
+                </div>
+                <!-- Navigation Links with Sequential Animations -->
+                <nav class="flex flex-col space-y-6 mb-auto">
+                    <a href="https://core360solutionz.com" class="nav-item text-xl text-gray-700 font-medium active:scale-95 relative group">
+                        <span class="relative">Home</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <div class="nav-item text-xl text-gray-700 font-medium active:scale-95 relative group">
+                        <div class="flex items-center justify-between">
+                            <span class="relative">Services</span>
+                            <svg class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+                        </div>
+                        <div class="mt-2 space-y-2 pl-4 transition-all duration-300 max-h-0 overflow-hidden group-hover:max-h-[200px]">
+                            <a href="https://core360solutionz.com/services#investment" class="block py-2 text-lg text-gray-700 hover:text-primary transition-colors duration-300">
+                                <i class="ri-line-chart-line mr-2"></i>Investment Services
+                            </a>
+                            <a href="https://core360solutionz.com/services#recruitment" class="block py-2 text-lg text-gray-700 hover:text-primary transition-colors duration-300">
+                                <i class="ri-user-search-line mr-2"></i>Recruitment Service
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://core360solutionz.com/pricing" class="nav-item text-xl text-gray-700 font-medium active:scale-95 relative group">
+                        <span class="relative">Pricing</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    
+                    <a href="https://core360solutionz.com/about" class="nav-item text-xl text-primary font-medium active:scale-95 relative group">
+                        <span class="relative">About Us</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="https://core360solutionz.com/contact" class="nav-item text-xl text-gray-700 font-medium hover:text-primary transition-all duration-300 active:scale-95 relative group">
+                        <span class="relative">Contact Us</span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+                <!-- CTA Button with Pulsing Effect -->
+                <a href="tel:+917700096660" class="advanced-cta-btn flex items-center gap-2 px-8 py-2.5 rounded-lg text-base text-white font-semibold relative overflow-hidden mt-auto mx-auto w-48 justify-center">
+                  <div class="cta-glow"></div>
+                  <i class="ri-phone-fill text-xl"></i>
+                  <span class="relative z-10">Call Now</span>
+                </a>
             </div>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="pt-20 relative overflow-hidden bg-gray-50">
-  <div class="container mx-auto px-4 py-8 flex flex-col items-center relative z-10">
-    <div class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-2xl shadow-xl flex flex-col items-center p-6 animate-fade-in">
-        <img src="images/businessman-using-tablet.jpg" alt="Financial Insights" class="w-full h-40 object-cover rounded-lg mb-4" />
-        <h3 class="font-bold text-xl text-emerald-700 mb-2">Financial Insights</h3>
-        <p class="text-gray-700 text-center">Empowering you with data-driven financial insights and modern technology.</p>
-      </div>
-      <!-- Card 2 -->
-      <div class="bg-white rounded-2xl shadow-xl flex flex-col items-center p-6 animate-fade-in" style="animation-delay:0.1s;">
-        <img src="images/drawing-arrow-coffee-notes.jpg" alt="Strategic Planning" class="w-full h-40 object-cover rounded-lg mb-4" />
-        <h3 class="font-bold text-xl text-emerald-700 mb-2">Strategic Planning</h3>
-        <p class="text-gray-700 text-center">Strategic business planning and consulting for sustainable growth.</p>
-      </div>
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl shadow-xl flex flex-col items-center p-6 animate-fade-in" style="animation-delay:0.2s;">
-        <img src="images/city-graph-arrow.jpg" alt="Market Solutions" class="w-full h-40 object-cover rounded-lg mb-4" />
-        <h3 class="font-bold text-xl text-emerald-700 mb-2">Market Solutions</h3>
-        <p class="text-gray-700 text-center">Driving your success with innovative market solutions.</p>
-      </div>
-      <!-- Card 4 -->
-      <div class="bg-white rounded-2xl shadow-xl flex flex-col items-center p-6 animate-fade-in" style="animation-delay:0.3s;">
-        <img src="images/house-on-money.jpg" alt="Investment Management" class="w-full h-40 object-cover rounded-lg mb-4" />
-        <h3 class="font-bold text-xl text-emerald-700 mb-2">Investment Management</h3>
-        <p class="text-gray-700 text-center">Smart investment and wealth management for your future.</p>
-      </div>
-      <!-- Card 5 -->
-      <div class="bg-white rounded-2xl shadow-xl flex flex-col items-center p-6 animate-fade-in" style="animation-delay:0.4s;">
-        <img src="images/helping-hand-green-bars.jpg" alt="Growth Partnership" class="w-full h-40 object-cover rounded-lg mb-4" />
-        <h3 class="font-bold text-xl text-emerald-700 mb-2">Growth Partnership</h3>
-        <p class="text-gray-700 text-center">Partnering for your growth—supporting every step of your journey.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<style>
-.animate-fade-in { animation: fadeIn 1s both; }
-@keyframes fadeIn { from { opacity:0; transform: translateY(30px);} to { opacity:1; transform: none;} }
-</style>
-<style>
-.animate-fade-in { animation: fadeIn 1s both; }
-@keyframes fadeIn { from { opacity:0; transform: translateY(30px);} to { opacity:1; transform: none;} }
-.animate-slide-in-up { animation: slideInUp 1s both; }
-@keyframes slideInUp { from { opacity:0; transform: translateY(60px);} to { opacity:1; transform: none;} }
-.animate-slide-in-down { animation: slideInDown 1s both; }
-@keyframes slideInDown { from { opacity:0; transform: translateY(-40px);} to { opacity:1; transform: none;} }
-</style>
-
-
-    <!-- Statistics Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Trading Excellence</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Experience the power of precision trading with our industry-leading success metrics that speak for themselves.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Accuracy Stat -->
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="ri-line-chart-line text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Exceptional Accuracy</h3>
-                    <div class="text-4xl font-bold text-primary mb-4">
-                        <span class="counter-value" data-target="92">0</span>%
-                    </div>
-                    <p class="text-gray-600">Average success rate across all our trading recommendations in the past year.</p>
-                </div>
-                
-                <!-- Active Clients Stat -->
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="ri-user-star-line text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Active Clientele</h3>
-                    <div class="text-4xl font-bold text-primary mb-4">
-                        <span class="counter-value" data-target="15000">0</span>+
-                    </div>
-                    <p class="text-gray-600">Traders across India who trust our expertise for their daily trading decisions.</p>
-                </div>
-                
-                <!-- Success Rate Stat -->
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-all hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="ri-funds-box-line text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Consistent Returns</h3>
-                    <div class="text-4xl font-bold text-primary mb-4">
-                        <span class="counter-value" data-target="38">0</span>%
-                    </div>
-                    <p class="text-gray-600">Average annual returns achieved by our clients following our recommendations.</p>
-                </div>
-            </div>
-            
-            <!-- Performance Chart -->
-            <div class="mt-16 bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Our Performance Track Record</h3>
-                <div id="performance-chart" class="w-full h-[400px]"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Identity Section -->
-    <section id="about" class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Company Identity</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover the journey, mission, and achievements that make Core 360 Solutionz the trusted partner for Indian traders.</p>
-            </div>
-            
-            <div class="relative h-[500px] bg-white rounded-lg shadow-lg overflow-hidden">
-                <!-- Company Slide 1: History -->
-                <div class="company-slide active p-8 md:p-12 flex flex-col md:flex-row items-center">
-                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our History</h3>
-                        <p class="text-gray-600 mb-6">Founded in 2010 by a team of experienced traders and financial analysts, Core 360 Solutionz began with a simple mission: to democratize access to professional-grade trading insights for Indian investors.</p>
-                        <p class="text-gray-600 mb-6">Over the past decade, we've grown from a small advisory firm to one of India's leading trading solution providers, serving thousands of clients across the country.</p>
-                        <p class="text-gray-600">Our journey has been marked by continuous innovation, unwavering commitment to accuracy, and a deep understanding of the unique challenges faced by Indian traders in global markets.</p>
-                    </div>
-                    <div class="w-full md:w-1/2 h-[300px]" style="background-image: url('https://readdy.ai/api/search-image?query=professional%20team%20of%20diverse%20Indian%20financial%20analysts%20and%20traders%20working%20together%20in%20a%20modern%20office%20with%20blue%20accents%2C%20analyzing%20market%20data%20on%20multiple%20screens%20with%20charts%20and%20graphs%2C%20showing%20collaboration%20and%20expertise%20in%20a%20corporate%20setting&width=600&height=400&seq=2&orientation=landscape'); background-size: cover; background-position: center;" class="rounded-lg"></div>
-                </div>
-                
-                <!-- Company Slide 2: Mission -->
-                <div class="company-slide p-8 md:p-12 flex flex-col md:flex-row items-center">
-                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Mission</h3>
-                        <p class="text-gray-600 mb-6">At Core 360 Solutionz, we're committed to empowering Indian traders with precision insights, advanced analytical tools, and personalized strategies that maximize profitability while minimizing risk.</p>
-                        <p class="text-gray-600 mb-6">We believe that successful trading isn't about luck—it's about having access to accurate information, timely recommendations, and expert guidance from professionals who understand the market dynamics.</p>
-                        <p class="text-gray-600">Our goal is to level the playing field for Indian retail traders, providing them with the same quality of insights and strategies that were once only available to institutional investors.</p>
-                    </div>
-                    <div class="w-full md:w-1/2 h-[300px]" style="background-image: url('https://readdy.ai/api/search-image?query=close-up%20of%20a%20professional%20Indian%20financial%20analyst%20pointing%20at%20complex%20trading%20charts%20and%20market%20data%20on%20multiple%20screens%20in%20a%20high-tech%20trading%20room%20with%20blue%20ambient%20lighting%2C%20showing%20determination%20and%20focus%20while%20explaining%20investment%20strategy&width=600&height=400&seq=3&orientation=landscape'); background-size: cover; background-position: center;" class="rounded-lg"></div>
-                </div>
-                
-                <!-- Company Slide 3: Achievements -->
-                <div class="company-slide p-8 md:p-12 flex flex-col md:flex-row items-center">
-                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Our Achievements</h3>
-                        <p class="text-gray-600 mb-6">Over the years, Core 360 Solutionz has earned recognition as one of India's most trusted trading advisory firms, with numerous accolades including "Best Trading Advisory" at the 2023 Financial Excellence Awards.</p>
-                        <p class="text-gray-600 mb-6">We've helped over 15,000 traders achieve their financial goals, with our clients reporting an average of 38% annual returns—significantly outperforming market benchmarks.</p>
-                        <p class="text-gray-600">Our team of 45+ certified financial analysts and market experts continues to push the boundaries of trading innovation, developing proprietary algorithms and strategies that consistently deliver results.</p>
-                    </div>
-                    <div class="w-full md:w-1/2 h-[300px]" style="background-image: url('https://readdy.ai/api/search-image?query=elegant%20display%20of%20multiple%20golden%20and%20crystal%20financial%20industry%20award%20trophies%20on%20a%20modern%20glass%20shelf%20with%20blue%20lighting%2C%20in%20a%20prestigious%20corporate%20office%20with%20Mumbai%20skyline%20visible%20through%20the%20windows%2C%20representing%20excellence%20in%20trading%20and%20investment%20advisory%20services&width=600&height=400&seq=4&orientation=landscape'); background-size: cover; background-position: center;" class="rounded-lg"></div>
-                </div>
-                
-                <!-- Carousel Controls -->
-                <div class="absolute bottom-6 left-0 right-0 flex justify-center space-x-3">
-                    <button class="w-3 h-3 rounded-full bg-gray-300 company-dot active" data-slide="0"></button>
-                    <button class="w-3 h-3 rounded-full bg-gray-300 company-dot" data-slide="1"></button>
-                    <button class="w-3 h-3 rounded-full bg-gray-300 company-dot" data-slide="2"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Personalized Approach Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Personalized Approach</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We understand that every trader is unique. That's why we tailor our strategies to ensure you find the perfect plan for your trading style and goals.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Approach Card 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-all hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-user-search-line text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Personalized Assessment</h3>
-                    <p class="text-gray-600">We begin by understanding your trading experience, risk tolerance, investment capacity, and financial goals to create a foundation for your personalized strategy.</p>
-                </div>
-                
-                <!-- Approach Card 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-all hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-settings-5-line text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Customized Strategy</h3>
-                    <p class="text-gray-600">Our expert analysts develop a tailored trading approach that aligns with your specific needs, focusing on markets and instruments that best suit your profile.</p>
-                </div>
-                
-                <!-- Approach Card 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-lg transform transition-all hover:-translate-y-2 hover:shadow-xl">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <i class="ri-line-chart-line text-primary text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Continuous Optimization</h3>
-                    <p class="text-gray-600">We constantly monitor your performance and market conditions, making real-time adjustments to your strategy to ensure optimal results in changing market scenarios.</p>
-                </div>
-            </div>
-            
-            <div class="mt-16 text-center">
-                <button class="px-8 py-3 bg-primary text-white hover:bg-primary/90 transition-colors font-bold !rounded-button whitespace-nowrap">Schedule Your Free Consultation</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Premium Services</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover our comprehensive range of trading services designed to maximize your success in Indian and global markets.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Service Card 1 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-investment-management.jpg" alt="Investment Management" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-bar-chart-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-investment-management.html" class="hover:text-primary transition-colors">Investment Management</a></h3>
-                        <p class="text-gray-600 mb-4">Professional portfolio management services to grow and protect your wealth across asset classes.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 2 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-financial-services.jpg" alt="Financial Services" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-bank-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-financial-services.html" class="hover:text-primary transition-colors">Financial Services</a></h3>
-                        <p class="text-gray-600 mb-4">Comprehensive financial planning, advisory, and consulting for individuals and businesses.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-it-services.jpg" alt="IT Services" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-computer-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-it-services.html" class="hover:text-primary transition-colors">IT Services</a></h3>
-                        <p class="text-gray-600 mb-4">Custom IT solutions, software development, and technology consulting for your business growth.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 4 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-recruitment.jpg" alt="Recruitment Services" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-user-search-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-recruitment-services.html" class="hover:text-primary transition-colors">Recruitment Services</a></h3>
-                        <p class="text-gray-600 mb-4">Talent acquisition, staffing, and HR solutions to build your ideal workforce.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 5 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-logistics.jpg" alt="Shipping & Logistic Services" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-truck-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-shipping-logistic.html" class="hover:text-primary transition-colors">Shipping & Logistic Services</a></h3>
-                        <p class="text-gray-600 mb-4">End-to-end shipping, logistics, and supply chain management for seamless operations.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 6 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-web-design.jpg" alt="Web Designing" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-layout-4-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-web-designing.html" class="hover:text-primary transition-colors">Web Designing</a></h3>
-                        <p class="text-gray-600 mb-4">Modern, responsive website design and development for a strong online presence.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 7 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-digital-marketing.jpg" alt="Digital Marketing" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-megaphone-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-digital-marketing.html" class="hover:text-primary transition-colors">Digital Marketing</a></h3>
-                        <p class="text-gray-600 mb-4">SEO, social media, and digital advertising strategies to grow your business online.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 8 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-real-estate.jpg" alt="Real Estate Services" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-building-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-real-estate.html" class="hover:text-primary transition-colors">Real Estate Services</a></h3>
-                        <p class="text-gray-600 mb-4">Property consulting, buying, selling, and investment solutions for all your real estate needs.</p>
-                    </div>
-                </div>
-
-                <!-- Service Card 9 -->
-                <div class="service-card bg-white p-4 rounded-xl shadow-md flex flex-col items-center md:flex-row md:items-start">
-    <div class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center">
-        <img src="images/service-call-center.jpg" alt="Call Center Setup" class="w-24 h-24 object-cover rounded-lg shadow-md mb-3">
-        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-            <i class="ri-headphone-line text-primary text-2xl"></i>
-        </div>
-    </div>
-                    <div class="w-full md:w-2/3">
-                        <h3 class="text-xl font-bold text-gray-800 mb-3"><a href="service-call-center-setup.html" class="hover:text-primary transition-colors">Call Center Setup</a></h3>
-                        <p class="text-gray-600 mb-4">Complete call center infrastructure and support for customer engagement and business process outsourcing.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Trading Plans</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Choose the perfect trading plan that aligns with your investment goals and trading style.</p>
-            </div>
-            
-            <!-- Pricing Toggle -->
-            <div class="flex justify-center items-center mb-12">
-                <span class="text-gray-600 mr-3">Monthly</span>
-                <label class="switch">
-                    <input type="checkbox" class="switch-input" id="pricing-toggle">
-                    <span class="switch-label"></span>
-                </label>
-                <span class="text-gray-600 ml-3">Quarterly</span>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Plan Card 1 -->
-                <div class="plan-card bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-primary p-6 text-white text-center">
-                        <h3 class="text-2xl font-bold">Technical Analysis Basic</h3>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-6">
-                            <div class="text-4xl font-bold text-gray-800 monthly-price">₹11,800</div>
-                            <div class="text-4xl font-bold text-gray-800 quarterly-price hidden">₹32,000</div>
-                            <p class="text-gray-600">per month</p>
-                        </div>
-                        
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">8-10 top recommendations monthly</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Up to ₹5,000 profit per positive trade</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Specific targets and stop-loss levels</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Instant mobile app notifications</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">24/7 premium customer support</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">4:1 target-to-stop-loss ratio</span>
-                            </li>
-                        </ul>
-                        
-                        <button class="w-full py-3 bg-primary text-white hover:bg-primary/90 transition-colors font-bold !rounded-button whitespace-nowrap">Subscribe Now</button>
-                    </div>
-                </div>
-                
-                <!-- Plan Card 2 (Featured) -->
-                <div class="plan-card bg-white rounded-lg shadow-xl overflow-hidden transform scale-105 relative">
-                    <div class="absolute top-0 right-0 bg-secondary text-white px-4 py-1 text-sm font-bold">POPULAR</div>
-                    <div class="bg-primary p-6 text-white text-center">
-                        <h3 class="text-2xl font-bold">INDEX OPTION</h3>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-6">
-                            <div class="text-4xl font-bold text-gray-800 monthly-price">₹37,200</div>
-                            <div class="text-4xl font-bold text-gray-800 quarterly-price hidden">₹99,000</div>
-                            <p class="text-gray-600">per month</p>
-                        </div>
-                        
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">20-22 intraday recommendations monthly</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">₹50,000 minimum investment per trade</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Up to ₹4,000 profit per positive trade</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Precise targets and stop-loss guidance</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Real-time mobile app notifications</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Premium 24/7 customer support</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">4:1 target-to-stop-loss ratio</span>
-                            </li>
-                        </ul>
-                        
-                        <button class="w-full py-3 bg-secondary text-white hover:bg-secondary/90 transition-colors font-bold !rounded-button whitespace-nowrap">Subscribe Now</button>
-                    </div>
-                </div>
-                
-                <!-- Plan Card 3 -->
-                <div class="plan-card bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-primary p-6 text-white text-center">
-                        <h3 class="text-2xl font-bold">STOCK FUTURE</h3>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-6">
-                            <div class="text-4xl font-bold text-gray-800 monthly-price">₹24,500</div>
-                            <div class="text-4xl font-bold text-gray-800 quarterly-price hidden">₹65,000</div>
-                            <p class="text-gray-600">per month</p>
-                        </div>
-                        
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">50 positive recommendations</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">₹1 lakh investment per trade</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Up to ₹15,000 profit per positive trade</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Detailed targets and stop-loss levels</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Instant mobile app notifications</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Superior customer support</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="ri-check-line text-primary mr-2 mt-1"></i>
-                                <span class="text-gray-600">Complimentary intraday recommendations</span>
-                            </li>
-                        </ul>
-                        
-                        <button class="w-full py-3 bg-primary text-white hover:bg-primary/90 transition-colors font-bold !rounded-button whitespace-nowrap">Subscribe Now</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <button class="px-8 py-3 bg-white border border-primary text-primary hover:bg-primary/5 transition-colors font-bold !rounded-button whitespace-nowrap">View All Plans</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Choose Core 360 Solutionz</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover the unique advantages that make us the preferred choice for thousands of Indian traders.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Benefit 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="ri-line-chart-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Proven Track Record</h3>
-                    <p class="text-gray-600">Our recommendations have consistently outperformed market benchmarks, with a 92% success rate over the past year.</p>
-                </div>
-                
-                <!-- Benefit 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="ri-shield-check-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Risk Management</h3>
-                    <p class="text-gray-600">Every recommendation comes with precise entry, target, and stop-loss levels to protect your capital and maximize returns.</p>
-                </div>
-                
-                <!-- Benefit 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="ri-notification-3-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Real-Time Alerts</h3>
-                    <p class="text-gray-600">Receive instant notifications on your mobile device, ensuring you never miss a profitable trading opportunity.</p>
-                </div>
-                
-                <!-- Benefit 4 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="ri-customer-service-2-line text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Support</h3>
-                    <p class="text-gray-600">Our team of experienced analysts is available 24/7 to address your queries and provide personalized guidance.</p>
-                </div>
-            </div>
-            
-            <div class="mt-16 bg-white p-8 rounded-lg shadow-lg">
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="w-full md:w-2/3 mb-8 md:mb-0 md:pr-8">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Transform Your Trading Results?</h3>
-                        <p class="text-gray-600 mb-6">Join thousands of successful traders who have elevated their trading performance with Core 360 Solutionz. Our expert recommendations and personalized strategies can help you achieve consistent profitability in any market condition.</p>
-                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                            <button class="px-6 py-3 bg-primary text-white hover:bg-primary/90 transition-colors font-bold !rounded-button whitespace-nowrap">Get Started Today</button>
-                            <button class="px-6 py-3 border border-primary text-primary hover:bg-primary/5 transition-colors font-bold !rounded-button whitespace-nowrap">Schedule a Demo</button>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/3">
-                        <div class="h-[200px]" style="background-image: url('https://readdy.ai/api/search-image?query=professional%20Indian%20trader%20celebrating%20success%20while%20looking%20at%20positive%20trading%20results%20on%20multiple%20screens%20with%20charts%20showing%20upward%20trends%2C%20in%20a%20modern%20office%20with%20blue%20accent%20lighting%2C%20conveying%20achievement%20and%20financial%20success&width=400&height=300&seq=5&orientation=landscape'); background-size: cover; background-position: center;" class="rounded-lg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-8 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Get In Touch</h2>
-            <p class="text-md text-gray-600 max-w-2xl mx-auto">Questions about our trading plans? We're here to help you succeed.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row items-center">
-            <!-- Company Info Small Card -->
-            <div class="w-full md:w-1/2 p-6 flex flex-col items-center justify-center text-center bg-primary text-white">
-                <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=200&q=80" alt="Professional team" class="w-24 h-24 rounded-full shadow-lg mb-4 object-cover">
-                <h3 class="text-xl font-bold mb-2">Core 360 Solutionz</h3>
-                <p class="mb-2 text-sm">India's premier trading advisory firm since 2010.</p>
-                <div class="text-xs mb-1"><i class="ri-map-pin-line mr-1"></i> BKC, Mumbai</div>
-                <div class="text-xs mb-1"><i class="ri-phone-line mr-1"></i> (22) 318-27-792 | +91 98765 43210</div>
-                <div class="text-xs mb-1"><i class="ri-mail-line mr-1"></i> info@core360solutionz.com</div>
-                <div class="text-xs mb-2"><i class="ri-time-line mr-1"></i> Mon-Fri: 9am-6pm, Sat: 10am-2pm</div>
-                <div class="flex space-x-2 mt-2 justify-center">
-                    <a href="#" class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-primary transition-colors"><i class="ri-facebook-fill"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-primary transition-colors"><i class="ri-twitter-fill"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-primary transition-colors"><i class="ri-linkedin-fill"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-primary transition-colors"><i class="ri-instagram-fill"></i></a>
-                </div>
-            </div>
-            <!-- Contact Form Small Card -->
-            <div class="w-full md:w-1/2 p-6 flex flex-col items-center justify-center bg-gray-50">
-                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=200&q=80" alt="Contact us" class="w-20 h-20 rounded-full shadow-lg mb-3 object-cover">
-                <h3 class="text-lg font-bold text-gray-800 mb-2">Send Us a Message</h3>
-                <form class="w-full max-w-xs mx-auto">
-                    <div class="mb-3">
-                        <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary text-sm" placeholder="Your Name">
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary text-sm" placeholder="Your Email">
-                    </div>
-                    <div class="mb-3">
-                        <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary text-sm" placeholder="Phone Number">
-                    </div>
-                    <div class="mb-3">
-                        <textarea id="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary text-sm" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-2 bg-primary text-white hover:bg-primary/90 transition-colors font-bold rounded">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-                            
-                            <div class="mb-6">
-                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
-                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Inquiry about INDEX OPTION plan">
-                            </div>
-                            
-                            <div class="mb-6">
-                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
-                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary" placeholder="I would like to know more about your INDEX OPTION plan and how it can help me improve my trading results..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="w-full py-3 bg-primary text-white hover:bg-primary/90 transition-colors font-bold !rounded-button whitespace-nowrap">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <!-- Company Info -->
-                <div>
-                    <a href="#" class="text-3xl font-['Pacifico'] text-white mb-4 inline-block">Core 360 Solutionz</a>
-                    <p class="text-gray-400 mb-6">India's premier trading advisory firm providing expert recommendations and personalized strategies for optimal market performance.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Services -->
-                <div>
-                    <h4 class="text-xl font-bold mb-4">Our Services</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Indian Equity Market</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Index Options Trading</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Stock Futures Trading</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Forex Market Trading</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Personalized Strategies</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Newsletter -->
-                <div>
-                    <h4 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Stay updated with our latest trading insights and market analysis.</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email address" class="px-4 py-2 bg-gray-800 text-white border-none rounded-l focus:outline-none focus:ring-1 focus:ring-primary w-full">
-                        <button type="submit" class="px-4 py-2 bg-primary text-white rounded-r hover:bg-primary/90 transition-colors !rounded-button whitespace-nowrap">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Core 360 Solutionz. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Disclaimer</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
-            
-            // Hero Slider
-            const heroSlides = document.querySelectorAll('.hero-slide');
-            const heroDots = document.querySelectorAll('.slider-dot');
-            let currentHeroSlide = 0;
-            
-            function changeHeroSlide(index) {
-                heroSlides.forEach(slide => slide.classList.remove('active'));
-                heroDots.forEach(dot => dot.classList.remove('active', 'bg-white', 'bg-white/30'));
-                heroDots.forEach(dot => dot.classList.add('bg-white/30'));
-                
-                heroSlides[index].classList.add('active');
-                heroDots[index].classList.remove('bg-white/30');
-                heroDots[index].classList.add('active', 'bg-white');
-                
-                currentHeroSlide = index;
-            }
-            
-            heroDots.forEach((dot, index) => {
-                dot.addEventListener('click', () => changeHeroSlide(index));
-            });
-            
-            // Auto-rotate hero slides
-            setInterval(() => {
-                let nextSlide = (currentHeroSlide + 1) % heroSlides.length;
-                changeHeroSlide(nextSlide);
-            }, 5000);
-            
-            // Company Carousel
-            const companySlides = document.querySelectorAll('.company-slide');
-            const companyDots = document.querySelectorAll('.company-dot');
-            let currentCompanySlide = 0;
-            
-            function changeCompanySlide(index) {
-                companySlides.forEach(slide => slide.classList.remove('active'));
-                companyDots.forEach(dot => dot.classList.remove('active', 'bg-primary', 'bg-gray-300'));
-                companyDots.forEach(dot => dot.classList.add('bg-gray-300'));
-                
-                companySlides[index].classList.add('active');
-                companyDots[index].classList.remove('bg-gray-300');
-                companyDots[index].classList.add('active', 'bg-primary');
-                
-                currentCompanySlide = index;
-            }
-            
-            companyDots.forEach((dot, index) => {
-                dot.addEventListener('click', () => changeCompanySlide(index));
-            });
-            
-            // Auto-rotate company slides
-            setInterval(() => {
-                let nextSlide = (currentCompanySlide + 1) % companySlides.length;
-                changeCompanySlide(nextSlide);
-            }, 6000);
-            
-            // Counter Animation
-            const counters = document.querySelectorAll('.counter-value');
-            
-            const animateCounter = (counter) => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const duration = 2000; // 2 seconds
-                const step = target / (duration / 16); // 60fps
-                let current = 0;
-                
-                const updateCounter = () => {
-                    current += step;
-                    if (current < target) {
-                        counter.textContent = Math.round(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            };
-            
-            // Intersection Observer for counters
-            const counterObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounter(entry.target);
-                        counterObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            
-            counters.forEach(counter => {
-                counterObserver.observe(counter);
-            });
-            
-            // Pricing Toggle
-            const pricingToggle = document.getElementById('pricing-toggle');
-            const monthlyPrices = document.querySelectorAll('.monthly-price');
-            const quarterlyPrices = document.querySelectorAll('.quarterly-price');
-            
-            pricingToggle.addEventListener('change', function() {
-                if (this.checked) {
-                    monthlyPrices.forEach(price => price.classList.add('hidden'));
-                    quarterlyPrices.forEach(price => price.classList.remove('hidden'));
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navItems = document.querySelectorAll('.nav-item');
+    // Mobile Services Dropdown Toggle
+    const mobileServicesGroup = document.querySelector('.nav-item.group');
+    const mobileServicesDropdown = mobileServicesGroup ? mobileServicesGroup.querySelector('div.mt-2') : null;
+    let servicesOpen = false;
+    if (mobileServicesGroup && mobileServicesDropdown) {
+        mobileServicesGroup.addEventListener('click', function(e) {
+            // Only toggle if clicking on the group header, not the dropdown links
+            if (e.target.closest('.nav-item.group > .flex')) {
+                servicesOpen = !servicesOpen;
+                if (servicesOpen) {
+                    mobileServicesDropdown.style.maxHeight = '200px';
+                    mobileServicesDropdown.style.overflow = 'visible';
                 } else {
-                    monthlyPrices.forEach(price => price.classList.remove('hidden'));
-                    quarterlyPrices.forEach(price => price.classList.add('hidden'));
+                    mobileServicesDropdown.style.maxHeight = '0';
+                    mobileServicesDropdown.style.overflow = 'hidden';
                 }
-            });
-            
-            // Performance Chart
-            const performanceChart = echarts.init(document.getElementById('performance-chart'));
-            
-            const option = {
-                animation: false,
-                tooltip: {
-                    trigger: 'axis',
-                    backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                    borderColor: '#eee',
-                    borderWidth: 1,
-                    textStyle: {
-                        color: '#1f2937'
-                    }
-                },
-                legend: {
-                    data: ['Core 360 Recommendations', 'Market Benchmark'],
-                    textStyle: {
-                        color: '#1f2937'
-                    }
-                },
-                grid: {
-                    left: '3%',
-                    right: '3%',
-                    bottom: '3%',
-                    top: '60px',
-                    containLabel: true
-                },
-                xAxis: {
-                    type: 'category',
-                    boundaryGap: false,
-                    data: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
-                    axisLine: {
-                        lineStyle: {
-                            color: '#ddd'
-                        }
-                    },
-                    axisLabel: {
-                        color: '#1f2937'
-                    }
-                },
-                yAxis: {
-                    type: 'value',
-                    axisLine: {
-                        lineStyle: {
-                            color: '#ddd'
-                        }
-                    },
-                    axisLabel: {
-                        color: '#1f2937',
-                        formatter: '{value}%'
-                    },
-                    splitLine: {
-                        lineStyle: {
-                            color: '#eee'
-                        }
-                    }
-                },
-                series: [
-                    {
-                        name: 'Core 360 Recommendations',
-                        type: 'line',
-                        smooth: true,
-                        symbol: 'none',
-                        lineStyle: {
-                            width: 3,
-                            color: 'rgba(87, 181, 231, 1)'
-                        },
-                        areaStyle: {
-                            color: {
-                                type: 'linear',
-                                x: 0,
-                                y: 0,
-                                x2: 0,
-                                y2: 1,
-                                colorStops: [{
-                                    offset: 0, color: 'rgba(87, 181, 231, 0.2)'
-                                }, {
-                                    offset: 1, color: 'rgba(87, 181, 231, 0.05)'
-                                }]
-                            }
-                        },
-                        data: [5.2, 8.7, 12.3, 15.8, 18.2, 22.5, 26.1, 29.8, 32.4, 35.7, 37.9, 40.2]
-                    },
-                    {
-                        name: 'Market Benchmark',
-                        type: 'line',
-                        smooth: true,
-                        symbol: 'none',
-                        lineStyle: {
-                            width: 3,
-                            color: 'rgba(141, 211, 199, 1)'
-                        },
-                        areaStyle: {
-                            color: {
-                                type: 'linear',
-                                x: 0,
-                                y: 0,
-                                x2: 0,
-                                y2: 1,
-                                colorStops: [{
-                                    offset: 0, color: 'rgba(141, 211, 199, 0.2)'
-                                }, {
-                                    offset: 1, color: 'rgba(141, 211, 199, 0.05)'
-                                }]
-                            }
-                        },
-                        data: [3.1, 4.2, 5.8, 7.3, 8.5, 10.2, 11.7, 13.5, 14.8, 16.2, 17.5, 19.1]
-                    }
-                ]
-            };
-            
-            performanceChart.setOption(option);
-            
-            // Resize chart on window resize
-            window.addEventListener('resize', function() {
-                performanceChart.resize();
+            }
+        });
+        // Close dropdown when clicking any dropdown link
+        const dropdownLinks = mobileServicesDropdown.querySelectorAll('a');
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                servicesOpen = false;
+                mobileServicesDropdown.style.maxHeight = '0';
+                mobileServicesDropdown.style.overflow = 'hidden';
+                // Also close mobile menu
+                menuBtn.classList.remove('open');
+                mobileMenu.classList.remove('show');
+                navItems.forEach(item => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                });
             });
         });
-    </script>
-<script>
-// Hybrid: Hover or click keeps Services menu open, click toggles Investment Management submenu
-(function() {
-    const investmentToggle = document.getElementById('investment-management-toggle');
-    const investmentSubmenu = document.getElementById('investment-management-submenu');
-    let investmentOpen = false;
-
-    // Investment submenu toggle (click only)
-    investmentToggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        investmentOpen = !investmentOpen;
-        if (investmentOpen) {
-            investmentSubmenu.classList.remove('opacity-0', 'pointer-events-none');
-            investmentSubmenu.classList.add('opacity-100');
+    }
+    // Close dropdown when clicking any other nav link
+    const allMobileNavLinks = document.querySelectorAll('.mobile-menu .nav-item:not(.group)');
+    allMobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (mobileServicesDropdown) {
+                servicesOpen = false;
+                mobileServicesDropdown.style.maxHeight = '0';
+                mobileServicesDropdown.style.overflow = 'hidden';
+            }
+            // Also close mobile menu
+            menuBtn.classList.remove('open');
+            mobileMenu.classList.remove('show');
+            navItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+            });
+        });
+    });
+    menuBtn.addEventListener('click', function() {
+        this.classList.toggle('open');
+        mobileMenu.classList.toggle('show');
+        // Animate nav items with stagger effect
+        if (mobileMenu.classList.contains('show')) {
+            navItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100 * (index + 1));
+            });
         } else {
-            investmentSubmenu.classList.add('opacity-0', 'pointer-events-none');
-            investmentSubmenu.classList.remove('opacity-100');
+            navItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+            });
         }
     });
-
-    // Close submenu when clicking outside (but not Services menu)
-    document.addEventListener('mousedown', function(e) {
-        if (!investmentSubmenu.contains(e.target) && !investmentToggle.contains(e.target)) {
-            investmentSubmenu.classList.add('opacity-0', 'pointer-events-none');
-            investmentSubmenu.classList.remove('opacity-100');
-            investmentOpen = false;
-        }
+    // Call Now Button Ripple Effect
+    const callNowBtns = document.querySelectorAll('.call-now-btn');
+    callNowBtns.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+            const ripple = document.createElement('div');
+            ripple.classList.add('absolute', 'bg-white', 'rounded-full', 'pointer-events-none', 'opacity-75');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = `${size}px`;
+            ripple.style.left = `${event.clientX - rect.left - size/2}px`;
+            ripple.style.top = `${event.clientY - rect.top - size/2}px`;
+            ripple.style.animation = 'ripple 0.75s ease-out';
+            this.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 750);
+        });
     });
-
-    // Keyboard accessibility: close on Escape
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            investmentSubmenu.classList.add('opacity-0', 'pointer-events-none');
-            investmentSubmenu.classList.remove('opacity-100');
-            investmentOpen = false;
-        }
-    });
-})();
+});
 </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core360Solutionz - Premium Investment Solutions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#395C6B", secondary: "#F94144" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Poppins', sans-serif;
+          scroll-behavior: smooth;
+          background-color: #F5F5F5;
+      }
+      .glass-card {
+          background: rgba(255, 255, 255, 0.7);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+          color: #183B4E !important;
+      }
+      .glass-card h3,
+      .glass-card ul,
+      .glass-card li,
+      .glass-card span,
+      .glass-card p {
+          color: #183B4E !important;
+      }
+      .parallax-bg {
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .animated-gradient {
+          background: linear-gradient(120deg, #395C6B, #264653, #395C6B);
+          background-size: 200% 200%;
+          animation: gradientAnimation 15s ease infinite;
+      }
+      @keyframes gradientAnimation {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+      }
+      .pulse-button {
+          animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+          0% { box-shadow: 0 0 0 0 rgba(249, 65, 68, 0.7); }
+          70% { box-shadow: 0 0 0 10px rgba(249, 65, 68, 0); }
+          100% { box-shadow: 0 0 0 0 rgba(249, 65, 68, 0); }
+      }
+      .float-animation {
+          transition: transform 0.3s ease;
+      }
+      .float-animation:hover {
+          transform: translateY(-5px);
+      }
+      .package-card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .package-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .feature-check {
+          position: relative;
+          opacity: 0;
+          animation: fadeIn 0.5s ease forwards;
+      }
+      @keyframes fadeIn {
+          0% { opacity: 0; transform: translateY(10px); }
+          100% { opacity: 1; transform: translateY(0); }
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(57, 92, 107, 0.5);
+          border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(57, 92, 107, 0.8);
+      }
+      .testimonial-card {
+          transition: transform 0.3s ease;
+      }
+      .testimonial-card:hover {
+          transform: scale(1.03);
+      }
+      .market-card {
+          transition: all 0.3s ease;
+          transform-style: preserve-3d;
+          perspective: 1000px;
+      }
+      .market-card:hover {
+          transform: translateY(-5px) rotateX(5deg);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .count-animation {
+          display: inline-block;
+          opacity: 0;
+          transform: translateY(20px);
+          animation: countUp 1s ease forwards;
+      }
+      @keyframes countUp {
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="custom-scrollbar">
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div
+          style="background-image: url('https://www.dropbox.com/scl/fi/6ak0l3esguq1icllqw9jz/hero-wall.jpg?rlkey=egru13pxj8qjntltfkr3zkx00&st=i3ld303p&raw=1');"
+          class="w-full h-full bg-cover bg-center"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 md:px-12 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="w-full md:w-1/2 text-white space-y-8">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+              Transform Your Investment Journey
+              <span class="text-[#90BE6D]">With US</span>
+            </h1>
+            <p class="text-lg md:text-xl opacity-90">
+              Unlock premium investment strategies tailored for the Indian
+              market. Our expert advisors help you navigate BSE/NSE with
+              confidence and maximize your returns.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <a
+                href="#services"
+                class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 !rounded-button float-animation whitespace-nowrap flex items-center justify-center"
+              >
+                <span class="mr-2">Explore Services</span>
+                <div class="w-5 h-5 flex items-center justify-center">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+              </a>
+              <a
+                href="tel:+919876543210"
+                class="bg-[#F94144] hover:bg-[#F94144]/90 text-white font-medium py-3 px-8 !rounded-button pulse-button whitespace-nowrap flex items-center justify-center"
+              >
+                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                  <i class="ri-phone-line"></i>
+                </div>
+                <span>Call Now</span>
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 mt-12 md:mt-0 hidden md:block">
+            <!-- This space intentionally left empty to maintain the hero layout -->
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+        <a href="#success" class="text-white animate-bounce">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <i class="ri-arrow-down-line ri-2x"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Success Section -->
+    <section id="success" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-primary mb-4">
+            Our Success Story
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Discover how our strategic approach has delivered consistent returns
+            for our clients across diverse market conditions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div
+              class="w-16 h-16 bg-[#90BE6D]/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-[#90BE6D]"
+              >
+                <i class="ri-line-chart-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">
+              ₹<span class="count-animation" data-count="15">15</span> Lakh
+            </h3>
+            <p class="text-gray-600">Assets Under Advisory</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-user-star-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">
+              <span class="count-animation" data-count="500">500</span>+
+            </h3>
+            <p class="text-gray-600">Satisfied Clients</p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div
+              class="w-16 h-16 bg-[#F94144]/10 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-[#F94144]"
+              >
+                <i class="ri-funds-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">
+              <span class="count-animation" data-count="32">32</span>%
+            </h3>
+            <p class="text-gray-600">Average Annual Returns</p>
+          </div>
+        </div>
+
+        <div class="mt-16 bg-white rounded-lg shadow-lg p-6">
+          <div id="returnsChart" class="w-full h-[400px]"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strategy Section -->
+    <section id="strategy" class="py-20 bg-[#F5F5F5]">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-primary mb-4">
+            Our Investment Strategy
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            We combine technical analysis, fundamental research, and market
+            insights to create robust investment strategies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div
+              id="strategyChart"
+              class="w-full h-[400px] bg-white rounded-lg shadow-lg"
+            ></div>
+          </div>
+
+          <div class="space-y-8">
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-bar-chart-grouped-line"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Technical Analysis</h3>
+                  <p class="text-gray-600">
+                    We employ advanced chart patterns, indicators, and price
+                    action analysis to identify optimal entry and exit points.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-[#90BE6D]/10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-[#90BE6D]"
+                  >
+                    <i class="ri-building-line"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Fundamental Research
+                  </h3>
+                  <p class="text-gray-600">
+                    Our team conducts in-depth analysis of company financials,
+                    sector trends, and economic indicators to identify value
+                    opportunities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-[#F94144]/10 rounded-full flex items-center justify-center mr-4"
+                >
+                  <div
+                    class="w-6 h-6 flex items-center justify-center text-[#F94144]"
+                  >
+                    <i class="ri-shield-check-line"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Risk Management</h3>
+                  <p class="text-gray-600">
+                    We implement strict risk management protocols with defined
+                    stop-loss levels and position sizing to protect your
+                    capital.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Markets Section -->
+    <section id="markets" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-primary mb-4">Markets We Cover</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Our comprehensive coverage spans across multiple market segments to
+            provide you with diverse investment opportunities.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="market-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="background-image: url('https://www.dropbox.com/scl/fi/p5ye7aid0p92olvib06yn/equity.jpg?rlkey=4205gj62qzzjvxxbwuoc5q9nn&st=v9itlflw&raw=1')"
+            ></div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-primary">
+                Indian Equity
+              </h3>
+              <p class="text-gray-600 mb-4">
+                We provide expert analysis and recommendations for NSE and BSE
+                listed stocks across large-cap, mid-cap, and small-cap segments.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Nifty 50</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Sensex</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Mid-Cap</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Small-Cap</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="market-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="background-image: url('https://www.dropbox.com/scl/fi/9ph1mena9qaq1d5z3iiqe/options.jpg?rlkey=a88lczbu94im4k2ofle33mwl8&st=jbtzzyqj&raw=1')"
+            ></div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-primary">
+                Index Options
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Our specialized options strategies focus on Nifty and Bank Nifty
+                index options to generate consistent returns with managed risk.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Nifty Options</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Bank Nifty Options</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Weekly Expiry</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Monthly Expiry</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="market-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="background-image: url('https://www.dropbox.com/scl/fi/38vb2rgxxi5u5cvt52f0s/stock-options.jpg?rlkey=k4az3jsyyvb04mgg4qv654l10&st=ucbxixpq&raw=1')"
+            ></div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-primary">
+                Stock Futures
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Leverage our expertise in stock futures to capitalize on
+                directional market movements with enhanced capital efficiency.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Large-Cap Futures</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Mid-Cap Futures</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Sector-Specific</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >Calendar Spreads</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="market-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="background-image: url('https://www.dropbox.com/scl/fi/hszpb5j7iw8u1vcxxg76u/forex.jpg?rlkey=22pw1u28ubpn77dbzgjcx34tz&st=war64u1s&raw=1')"
+            ></div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-primary">Commodity & Forex</h3>
+              <p class="text-gray-600 mb-4">
+                Our forex advisory services focus on major currency pairs with
+                INR to help you navigate global currency markets effectively.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >XAU/INR</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >USD/INR</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >EUR/INR</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >GBP/INR</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+                  >JPY/INR</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Account Handling Section -->
+    <section id="account-handling" class="py-20 relative overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div
+          style="background-image: url('https://readdy.ai/api/search-image?query=4K%20ultra%20high%20quality%20photo%20of%20professional%20Indian%20financial%20advisors%20in%20modern%20office%20environment%20analyzing%20stock%20charts%20on%20multiple%20screens%2C%20elegant%20workspace%20with%20glass%20partitions%2C%20ambient%20lighting%2C%20people%20in%20business%20attire%2C%20sophisticated%20trading%20operation&width=1920&height=1080&seq=6&orientation=landscape');"
+          class="w-full h-full bg-cover bg-center parallax-bg"
+        ></div>
+        <div class="absolute inset-0 bg-primary/80"></div>
+      </div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-white mb-4">
+            Account Handling Services
+          </h2>
+          <p class="text-white/90 max-w-3xl mx-auto">
+            Let our expert team manage your investment portfolio with our proven
+            50/50 profit sharing model.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="glass-card rounded-lg p-8 text-white">
+            <div
+              class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6"
+            >
+              <div class="w-8 h-8 flex items-center justify-center text-white">
+                <i class="ri-user-settings-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Professional Management</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Expert traders with 10+ years of market experience</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Dedicated portfolio manager for your account</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Daily performance updates and weekly strategy calls</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span
+                  >Transparent trading history and performance tracking</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card rounded-lg p-8 text-white">
+            <div
+              class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6"
+            >
+              <div class="w-8 h-8 flex items-center justify-center text-white">
+                <i class="ri-shield-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Risk Management</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Strict capital protection protocols</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Predefined risk parameters for each trade</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Diversification across multiple market segments</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Maximum drawdown limits to protect your capital</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glass-card rounded-lg p-8 text-white">
+            <div
+              class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6"
+            >
+              <div class="w-8 h-8 flex items-center justify-center text-white">
+                <i class="ri-funds-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Profit Sharing Structure</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Fair 50/50 profit sharing model</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>No management fees - we earn only when you profit</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Monthly profit settlements</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span>Complete transparency with real-time reporting</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="#contact"
+            class="bg-[#F94144] hover:bg-[#F94144]/90 text-white font-medium py-3 px-8 !rounded-button pulse-button inline-flex items-center whitespace-nowrap"
+          >
+            <span>Start Account Handling</span>
+            <div class="w-5 h-5 flex items-center justify-center ml-2">
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-[#F5F5F5]">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-primary mb-4">
+            Investment Packages
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Choose the investment package that best suits your financial goals
+            and trading style.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Basic Package -->
+          <div
+            class="package-card bg-white rounded-lg shadow-lg overflow-hidden"
+          >
+            <div class="p-2 bg-[#90BE6D] text-white text-center">
+              <span class="font-medium">BASIC PACKAGE</span>
+            </div>
+            <div class="p-8">
+              <div class="text-center mb-6">
+                <h3 class="text-3xl font-bold text-primary">
+                  ₹5,999<span class="text-gray-500 text-lg font-normal"
+                    >/month</span
+                  >
+                </h3>
+                <p class="text-gray-500 mt-2">
+                  Best for beginners and part-time traders
+                </p>
+              </div>
+
+              <ul class="space-y-4 mb-8">
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.1s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Daily market analysis reports</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.2s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >5 Premium recommendations per month</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.3s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Advanced technical analysis</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.4s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Weekly portfolio review</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.5s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Email support</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.6s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Risk-to-reward ratio of 5:1</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.7s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#90BE6D] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Approx. possible profit up to ₹5,000 per positive
+                    trade</span
+                  >
+                </li>
+              </ul>
+
+              <div class="text-center">
+                <a
+                  href="#contact"
+                  class="bg-[#90BE6D] hover:bg-[#90BE6D]/90 text-white font-medium py-3 px-8 !rounded-button inline-block w-full whitespace-nowrap"
+                  >Subscribe Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Package -->
+          <div
+            class="package-card bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 border-2 border-primary"
+          >
+            <div class="p-2 bg-primary text-white text-center">
+              <span class="font-medium">PREMIUM PACKAGE</span>
+            </div>
+            <div
+              class="absolute -right-3 -top-3 bg-[#F94144] text-white text-xs font-bold px-3 py-1 rounded-full transform rotate-12"
+            >
+              
+            </div>
+            <div class="p-8">
+              <div class="text-center mb-6">
+                <h3 class="text-3xl font-bold text-primary">
+                  ₹11,999<span class="text-gray-500 text-lg font-normal"
+                    >/month</span
+                  >
+                </h3>
+                <p class="text-gray-500 mt-2">
+                  Best for active traders seeking consistent returns
+                </p>
+              </div>
+
+              <ul class="space-y-4 mb-8">
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.1s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">All Basic Package features</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.2s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >12 Premium recommendations per month</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.3s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Advanced technical analysis</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.4s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Bi-weekly portfolio review calls</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.5s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Priority email and phone support</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.6s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Access to educational webinars</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.7s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Risk-to-reward ratio of 5:1</span>
+                </li>
+              </ul>
+
+              <div class="text-center">
+                <a
+                  href="#contact"
+                  class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 !rounded-button inline-block w-full whitespace-nowrap"
+                  >Subscribe Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Elite Package -->
+          <div
+            class="package-card bg-white rounded-lg shadow-lg overflow-hidden border-2 border-[#7C3AED]"
+          >
+            <div class="p-2 bg-[#7C3AED] text-white text-center">
+              <span class="font-medium">ELITE PACKAGE</span>
+            </div>
+            <div class="p-8">
+              <div class="text-center mb-6">
+                <h3 class="text-3xl font-bold text-primary">
+                  ₹24,999<span class="text-gray-500 text-lg font-normal"
+                    >/month</span
+                  >
+                </h3>
+                <p class="text-gray-500 mt-2">
+                  Best for serious investors with larger portfolios
+                </p>
+              </div>
+
+              <ul class="space-y-4 mb-8">
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.1s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >All Premium Package features</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.2s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >25 premium recommendations per month</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.3s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Custom trading strategies</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.4s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Weekly one-on-one consultation</span
+                  >
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.5s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">24/7 priority support</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.6s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;">Risk management planning</span>
+                </li>
+                <li
+                  class="flex items-start feature-check"
+                  style="animation-delay: 0.7s;"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-[#7C3AED] mt-1 mr-3"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span style="color:#111;"
+                    >Access to exclusive trading community</span
+                  >
+                </li>
+              </ul>
+
+              <div class="text-center">
+                <a
+                  href="#contact"
+                  class="bg-[#7C3AED] hover:bg-[#5B21B6] text-white font-medium py-3 px-8 !rounded-button inline-block w-full whitespace-nowrap shadow-lg"
+                  >Subscribe Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600 mb-4">
+            Need a customized solution? We can tailor our services to meet your
+            specific requirements.
+          </p>
+          <a
+            href="#contact"
+            class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 !rounded-button inline-flex items-center whitespace-nowrap"
+          >
+            <span>Request Custom Plan</span>
+            <div class="w-5 h-5 flex items-center justify-center ml-2">
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-primary mb-4">
+            Client Success Stories
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Hear from our clients who have transformed their investment journey
+            with our expert guidance.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="testimonial-card bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20Indian%20businessman%20in%20his%2040s%20wearing%20formal%20business%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20professional%20lighting&width=100&height=100&seq=7&orientation=squarish"
+                  alt="Rajesh Sharma"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold">Rajesh Sharma</h4>
+                <p class="text-gray-500">IT Professional, Bangalore</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="flex text-[#F94144]">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Core360Solutionz has completely transformed my investment
+              approach. Their Premium package recommendations have consistently
+              delivered returns exceeding 25% annually. The team's expertise in
+              options trading is exceptional."
+            </p>
+          </div>
+
+          <div class="testimonial-card bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20Indian%20businesswoman%20in%20her%2030s%20wearing%20formal%20business%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20professional%20lighting&width=100&height=100&seq=8&orientation=squarish"
+                  alt="Priya Mehta"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold">Priya Mehta</h4>
+                <p class="text-gray-500">Finance Consultant, Mumbai</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="flex text-[#F94144]">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "I've been using their account handling service for the past 18
+              months, and the results have been outstanding. Their risk
+              management approach is impeccable, and the 50/50 profit sharing
+              model ensures they're fully committed to my success."
+            </p>
+          </div>
+
+          <div class="testimonial-card bg-white rounded-lg shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img
+                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20Indian%20man%20in%20his%2050s%20wearing%20semi-formal%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20professional%20lighting&width=100&height=100&seq=9&orientation=squarish"
+                  alt="Vikram Singhania"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold">Vikram Singhania</h4>
+                <p class="text-gray-500">Business Owner, Delhi</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="flex text-[#F94144]">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "As a business owner with limited time to monitor markets, the
+              Elite package has been a game-changer. The personalized strategy
+              sessions and priority support have helped me maximize returns
+              while focusing on my core business."
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16">
+          <div class="bg-[#F5F5F5] rounded-lg p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Our Performance Metrics
+                </h3>
+                <div class="space-y-6">
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span class="font-medium text-gray-700"
+                        >Client Satisfaction</span
+                      >
+                      <span class="font-medium text-gray-700">98%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                      <div
+                        class="bg-[#90BE6D] h-2 rounded-full"
+                        style="width: 98%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span class="font-medium text-gray-700"
+                        >Average Annual Returns</span
+                      >
+                      <span class="font-medium text-gray-700">32%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                      <div
+                        class="bg-primary h-2 rounded-full"
+                        style="width: 32%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span class="font-medium text-gray-700"
+                        >Recommendation Accuracy</span
+                      >
+                      <span class="font-medium text-gray-700">95%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                      <div
+                        class="bg-[#F94144] h-2 rounded-full"
+                        style="width: 95%"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span class="font-medium text-gray-700"
+                        >Client Retention Rate</span
+                      >
+                      <span class="font-medium text-gray-700">94%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                      <div
+                        class="bg-[#264653] h-2 rounded-full"
+                        style="width: 94%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div id="performanceChart" class="w-full h-[300px]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#F5F5F5] relative overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-10">
+        <div
+          style="background-image: url('https://readdy.ai/api/search-image?query=abstract%20financial%20network%20connections%20with%20Indian%20rupee%20symbols%2C%20digital%20data%20visualization%2C%20blue%20and%20teal%20technology%20background%2C%20financial%20technology%20concept%20art&width=1920&height=1080&seq=10&orientation=landscape');"
+          class="w-full h-full bg-cover bg-center"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-primary mb-4">Contact Us</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Ready to transform your investment journey? Get in touch with our
+            expert team today.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-2xl font-bold text-primary mb-6">
+              Send Us a Message
+            </h3>
+            <form id="contactForm">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label for="name" class="block text-gray-700 mb-2"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div>
+                  <label for="email" class="block text-gray-700 mb-2"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    placeholder="Your email address"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label for="phone" class="block text-gray-700 mb-2"
+                  >Phone Number</label
+                >
+                <div class="flex">
+                  <div
+                    class="w-20 flex items-center justify-center bg-gray-100 border border-gray-300 border-r-0 rounded-l px-3"
+                  >
+                    <span style="color:#111;">+91</span>
+                  </div>
+                  <input
+                    type="text"
+                    id="phone"
+                    class="flex-1 px-4 py-2 border border-gray-300 rounded-r focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    placeholder="Your 10-digit phone number"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label for="service" class="block text-gray-700 mb-2"
+                  >Interested In</label
+                >
+                <div class="relative">
+                  <select
+                    id="service"
+                    class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 pr-8"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="basic">Basic Package</option>
+                    <option value="premium">Premium Package</option>
+                    <option value="elite">Elite Package</option>
+                    <option value="account">Account Handling</option>
+                    <option value="custom">Custom Solution</option>
+                  </select>
+                  <div
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                  >
+                    <div
+                      class="w-5 h-5 flex items-center justify-center text-gray-500"
+                    >
+                      <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  placeholder="Tell us about your investment goals"
+                ></textarea>
+              </div>
+
+              <div class="mb-6">
+                <label class="flex items-start">
+                  <input type="checkbox" class="mt-1 mr-2" />
+                  <span class="text-gray-600 text-sm"
+                    >I agree to receive investment updates and newsletters from
+                    Core360Solutionz. You can unsubscribe at any time.</span
+                  >
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 !rounded-button w-full whitespace-nowrap"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+
+          <div>
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+              <h3 class="text-2xl font-bold text-primary mb-6">
+                Contact Information
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <div
+                      class="w-6 h-6 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-map-pin-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">
+                      Office Address
+                    </h4>
+                    <p class="text-gray-600">
+                        F-31, 1st Floor,Haware Centurion Premises, Opp Bharat Petrol Pump,  Near Seawood Darave Railway Station Sector 19A, Nerul East, Thane - 400706
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <div
+                      class="w-6 h-6 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-phone-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">
+                      Phone Number
+                    </h4>
+                    <p class="text-gray-600">+91 22 3182 7792</p>
+
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <div
+                      class="w-6 h-6 flex items-center justify-center text-primary"
+                    >
+                      <i class="ri-mail-line"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-1">
+                      Email Address
+                    </h4>
+                    <p class="text-gray-600">info@core360solutionz.com</p>
+                    <p class="text-gray-600">support@core360solutionz.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <h3 class="text-2xl font-bold text-primary mb-6">
+                Business Hours
+              </h3>
+              <div class="space-y-4">
+                <div class="flex justify-between">
+                  <span class="text-gray-600">Monday - Friday</span>
+                  <span class="font-medium text-gray-800"
+                    >9:00 AM - 6:00 PM</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600">Saturday</span>
+                  <span class="font-medium text-gray-800"
+                    >10:00 AM - 3:00 PM</span
+                  >
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600">Sunday</span>
+                  <span class="font-medium text-gray-800">Closed</span>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-semibold text-gray-800 mb-4">
+                  Connect With Us
+                </h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-facebook-fill"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-twitter-x-fill"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-linkedin-fill"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-instagram-fill"></i>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
+                  >
+                    <div class="w-5 h-5 flex items-center justify-center">
+                      <i class="ri-telegram-fill"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Returns Chart
+        const returnsChart = echarts.init(document.getElementById("returnsChart"));
+        const returnsOption = {
+          animation: false,
+          title: {
+            text: "Average Monthly Returns (Last Month)",
+            left: "center",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          tooltip: {
+            trigger: "axis",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderColor: "#ccc",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          legend: {
+            data: ["Core360Solutionz", "Market Average"],
+            bottom: "0%",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          grid: {
+            left: "3%",
+            right: "4%",
+            bottom: "10%",
+            top: "15%",
+            containLabel: true,
+          },
+          xAxis: {
+            type: "category",
+            data: [
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+            ],
+            axisLine: {
+              lineStyle: {
+                color: "#ccc",
+              },
+            },
+            axisLabel: {
+              color: "#1f2937",
+            },
+          },
+          yAxis: {
+            type: "value",
+            name: "Return %",
+            nameTextStyle: {
+              color: "#1f2937",
+            },
+            axisLine: {
+              lineStyle: {
+                color: "#ccc",
+              },
+            },
+            axisLabel: {
+              color: "#1f2937",
+              formatter: "{value}%",
+            },
+            splitLine: {
+              lineStyle: {
+                color: "#eee",
+              },
+            },
+          },
+          series: [
+            {
+              name: "Core360Solutionz",
+              type: "line",
+              data: [2.8, 3.2, 2.5, 4.1, 2.9, 3.8, 2.6, 3.5, 4.2, 3.1, 2.7, 3.9],
+              smooth: true,
+              symbol: "none",
+              lineStyle: {
+                color: "rgba(87, 181, 231, 1)",
+                width: 3,
+              },
+              areaStyle: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 0,
+                    color: "rgba(87, 181, 231, 0.3)",
+                  },
+                  {
+                    offset: 1,
+                    color: "rgba(87, 181, 231, 0.1)",
+                  },
+                ]),
+              },
+            },
+            {
+              name: "Market Average",
+              type: "line",
+              data: [1.2, 1.5, 1.1, 1.8, 1.3, 1.6, 1.0, 1.4, 1.9, 1.2, 1.1, 1.7],
+              smooth: true,
+              symbol: "none",
+              lineStyle: {
+                color: "rgba(141, 211, 199, 1)",
+                width: 3,
+              },
+              areaStyle: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  {
+                    offset: 0,
+                    color: "rgba(141, 211, 199, 0.3)",
+                  },
+                  {
+                    offset: 1,
+                    color: "rgba(141, 211, 199, 0.1)",
+                  },
+                ]),
+              },
+            },
+          ],
+        };
+        returnsChart.setOption(returnsOption);
+
+        // Initialize Strategy Chart
+        const strategyChart = echarts.init(document.getElementById("strategyChart"));
+        const strategyOption = {
+          animation: false,
+          title: {
+            text: "Strategy Performance Comparison",
+            left: "center",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          tooltip: {
+            trigger: "item",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderColor: "#ccc",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          legend: {
+            orient: "vertical",
+            right: "5%",
+            top: "center",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          series: [
+            {
+              name: "Strategy Allocation",
+              type: "pie",
+              radius: ["40%", "70%"],
+              center: ["40%", "50%"],
+              avoidLabelOverlap: false,
+              itemStyle: {
+                borderRadius: 10,
+                borderColor: "#fff",
+                borderWidth: 2,
+              },
+              label: {
+                show: false,
+              },
+              emphasis: {
+                label: {
+                  show: true,
+                  fontSize: "14",
+                  fontWeight: "bold",
+                },
+              },
+              labelLine: {
+                show: false,
+              },
+              data: [
+                { value: 35, name: "Options Trading" },
+                { value: 25, name: "Equity Investment" },
+                { value: 20, name: "Index Futures" },
+                { value: 15, name: "Sector Rotation" },
+                { value: 5, name: "Forex" },
+              ],
+              color: [
+                "rgba(87, 181, 231, 1)",
+                "rgba(141, 211, 199, 1)",
+                "rgba(251, 191, 114, 1)",
+                "rgba(252, 141, 98, 1)",
+                "rgba(179, 179, 179, 1)",
+              ],
+            },
+          ],
+        };
+        strategyChart.setOption(strategyOption);
+        // Initialize Performance Chart
+        const performanceChart = echarts.init(
+          document.getElementById("performanceChart"),
+        );
+        const performanceOption = {
+          animation: false,
+          title: {
+            text: "Performance by Market Segment",
+            left: "center",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          tooltip: {
+            trigger: "axis",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderColor: "#ccc",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          grid: {
+            left: "3%",
+            right: "4%",
+            bottom: "10%",
+            top: "15%",
+            containLabel: true,
+          },
+          xAxis: {
+            type: "category",
+            data: ["Equity", "Options", "Futures", "Forex"],
+            axisLine: {
+              lineStyle: {
+                color: "#ccc",
+              },
+            },
+            axisLabel: {
+              color: "#1f2937",
+            },
+          },
+          yAxis: {
+            type: "value",
+            name: "Return %",
+            nameTextStyle: {
+              color: "#1f2937",
+            },
+            axisLine: {
+              lineStyle: {
+                color: "#ccc",
+              },
+            },
+            axisLabel: {
+              color: "#1f2937",
+              formatter: "{value}%",
+            },
+            splitLine: {
+              lineStyle: {
+                color: "#eee",
+              },
+            },
+          },
+          series: [
+            {
+              name: "Annual Returns",
+              type: "bar",
+              data: [24, 32, 28, 18],
+              itemStyle: {
+                color: function (params) {
+                  const colors = [
+                    "rgba(87, 181, 231, 1)",
+                    "rgba(141, 211, 199, 1)",
+                    "rgba(251, 191, 114, 1)",
+                    "rgba(252, 141, 98, 1)",
+                  ];
+                  return colors[params.dataIndex];
+                },
+                borderRadius: [5, 5, 0, 0],
+              },
+              barWidth: "40%",
+            },
+          ],
+        };
+        performanceChart.setOption(performanceOption);
+        // Handle form submission
+        const contactForm = document.getElementById("contactForm");
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Simple form validation
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const service = document.getElementById("service").value;
+
+            if (!name || !email || !phone || !service) {
+              alert("Please fill in all required fields.");
+              return;
+            }
+
+            // Simulate form submission
+            alert("Thank you for your interest! Our team will contact you shortly.");
+            contactForm.reset();
+          });
+        }
+
+        // Animation for count numbers
+        const countElements = document.querySelectorAll(".count-animation");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = entry.target;
+                const count = parseInt(target.getAttribute("data-count"));
+                let current = 0;
+                const increment = count / 50;
+                const timer = setInterval(() => {
+                  current += increment;
+                  target.textContent = Math.round(current);
+                  if (current >= count) {
+                    target.textContent = count;
+                    clearInterval(timer);
+                  }
+                }, 20);
+                observer.unobserve(target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        countElements.forEach((el) => {
+          observer.observe(el);
+        });
+
+        // Feature check animation
+        const featureElements = document.querySelectorAll(".feature-check");
+        const featureObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                featureObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 },
+        );
+        featureElements.forEach((el) => {
+          featureObserver.observe(el);
+        });
+
+        // Resize charts when window size changes
+        window.addEventListener("resize", function () {
+          returnsChart.resize();
+          strategyChart.resize();
+          performanceChart.resize();
+        });
+      });
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#27548A',secondary:'#FF6B6B'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+    :where([class^="ri-"])::before { content: "\f3c2"; }
+    body {
+    font-family: 'Montserrat', sans-serif;
+    color: #183B4E;
+    scroll-behavior: smooth;
+    }
+    
+    /* Footer Summary Start */
+    .footer-summary {
+      font-size: 0.875rem;
+      color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Footer Styles and Responsive Tweaks */
+    footer .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1.5fr;
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .max-w-5xl {
+        padding: 0 1rem;
+      }
+      h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      /* Footer mobile optimizations */
+      footer .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      /* Policy links mobile adjustments */
+      .flex.flex-wrap.justify-center.space-x-6 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      .flex.flex-wrap.justify-center.space-x-6 a {
+        margin: 0;
+        text-align: center;
+      }
+      footer .grid > div:first-child {
+        grid-column: 1 / -1;
+      }
+      footer .grid > div:nth-child(2) {
+        padding-left: 0;
+      }
+      footer .grid > div:nth-child(3) {
+        padding-left: 1rem;
+      }
+      footer .grid > div:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+    </style>
+    </head>
+    <body>
+        <footer class="bg-gray-900 text-white pt-16 pb-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    <!-- Company Info -->
+                    <div>
+                        <div class="flex items-center mb-6 ml-0 pl-0" style="margin-left:-4rem;">
+        <img src="https://www.dropbox.com/scl/fi/9cus9zd97il91qw3gtq6t/Core360solutionz-Logo.jpg?rlkey=6i0t4d8uogafreu0a2aj3kv4n&st=i0dvs77m&raw=1" alt="Core360Solutionz Logo" class="h-20 w-52 object-contain rounded shadow-lg ml-0 pl-0" />
+    </div>
+                        <p class="text-gray-400 mb-6">Core360 Solutionz offers comprehensive investment solutions and expert HR recruitment services across India. Empowering businesses and individuals to achieve growth and success with integrity, expertise, and a client-centric approach.</p>
+                        <div class="flex space-x-4">
+        <a href="https://www.facebook.com/core360solutionz/" target="_blank" rel="noopener" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.x.com/Core360solution" target="_blank" rel="noopener" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <i class="ri-twitter-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/core360solutionz/" target="_blank" rel="noopener" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/core360solutionz/" target="_blank" rel="noopener" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <i class="ri-instagram-fill"></i>
+        </a>
+        <a href="https://t.me/+AlAEgISdxcJlNGQ1" target="_blank" rel="noopener" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <i class="ri-telegram-fill"></i>
+        </a>
+        <a href="https://wa.me/917700096660" target="_blank" rel="noopener" class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+            <i class="ri-whatsapp-fill"></i>
+        </a>
+    </div>
+                    </div>
+                    <!-- Services -->
+                    <div class="pl-14">
+                        <h4 class="text-lg font-semibold mb-6">Services</h4>
+                        <ul class="space-y-3">
+        <li><a href="https://www.core360solutionz.com/investment-services" class="text-gray-400 hover:text-white transition-colors duration-300">Investment Services</a></li>
+        <li><a href="https://www.core360solutionz.com/recruitment-services" class="text-gray-400 hover:text-white transition-colors duration-300">Recruitment Services</a></li>
+    </ul>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="pl-14">
+                        <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                        <ul class="space-y-3">
+        <li><a href="https://www.core360solutionz.com/" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+        <li class="relative group">
+      <a href="https://www.core360solutionz.com/" class="text-gray-400 hover:text-white transition-colors duration-300 flex items-center">Services <span class="ml-1">&#9662;</span></a>
+      <ul class="absolute left-0 mt-1 w-48 bg-gray-900 border border-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-10">
+        <li>
+          <a href="https://www.core360solutionz.com/investment-services" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-800 transition-colors duration-300">Investment Services</a>
+        </li>
+        <li>
+          <a href="https://www.core360solutionz.com/recruitment-services" class="block px-4 py-2 text-gray-400 hover:text-white hover:bg-gray-800 transition-colors duration-300">Recruitment Services</a>
+        </li>
+      </ul>
+    </li>
+        <li><a href="https://www.core360solutionz.com/" class="text-gray-400 hover:text-white transition-colors duration-300">Pricing</a></li>
+        <li><a href="https://www.core360solutionz.com/" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+        <li><a href="https://www.core360solutionz.com/" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
+    </ul>
+                    </div>
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Subscribe to Our Newsletter</h4>
+                        <p class="text-gray-400 mb-4">Get the latest updates on business innovation, digital trends, and expert insights from Core360 Solutionz.</p>
+                        <form class="mb-8">
+                            <div class="flex">
+                                <input type="email" placeholder="Your email address" class="custom-input flex-grow px-4 py-2 rounded-l bg-gray-800 border-gray-700 text-white focus:outline-none">
+                                <button type="submit" class="bg-primary text-white px-4 py-2 !rounded-r-button whitespace-nowrap font-medium hover:bg-opacity-90 transition-all duration-300">Subscribe</button>
+                            </div>
+                        </form>
+                        <div class="flex items-center mb-2">
+                            <i class="ri-phone-fill mr-2"></i>
+                            <a href="tel:+912231827792" class="text-gray-300 hover:text-white transition-colors duration-300">+91 22 3182 7792</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="ri-mail-fill mr-2"></i>
+                            <a href="mailto:info@core360solutionz.com" class="text-gray-300 hover:text-white transition-colors duration-300">info@core360solutionz.com</a>
+                        </div>
+                        <div class="flex items-start mt-2">
+                            <i class="ri-map-pin-2-fill mr-2 mt-1"></i>
+                            <div class="text-gray-300">
+                                <span class="block hover:text-white transition-colors duration-300">F-31, 1st Floor, Haware Centurion Premises, Opp Bharat Petrol Pump, Near Seawood Darave Railway Station </span>
+    <span class="block hover:text-white transition-colors duration-300">Sector 19A, Nerul East, Thane 400706</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== FOOTER SECTION START ==================== -->
+                <div class="border-t border-gray-800 pt-8 pb-4">
+                    <div class="max-w-7xl mx-auto px-5">
+                        <div class="flex flex-col items-center">
+                            <div class="flex flex-wrap justify-center space-x-6 mb-6">
+                                <a href="https://core360solutionz.com/privacy-policy" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
+    <a href="https://core360solutionz.com/terms" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
+                            </div>
+                            <hr class="border-gray-700 w-full mb-8">
+                            <div class="w-full flex justify-center">
+                                <p class="text-gray-400 text-sm text-center w-full"> 2025 core360solutionz. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ==================== FOOTER SECTION END ==================== -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const chatBtn = document.querySelector('.live-chat-btn');
+      if(chatBtn) {
+        chatBtn.addEventListener('click', function(event) {
+          // Add click ripple effect
+          const ripple = document.createElement('div');
+          ripple.classList.add('absolute', 'bg-white', 'rounded-full', 'pointer-events-none', 'opacity-75');
+          const rect = this.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.width = ripple.style.height = `${size}px`;
+          ripple.style.left = `${event.clientX - rect.left - size/2}px`;
+          ripple.style.top = `${event.clientY - rect.top - size/2}px`;
+          ripple.style.animation = 'ripple 0.75s ease-out';
+          this.appendChild(ripple);
+          setTimeout(() => ripple.remove(), 750);
+          // Open chat window logic here
+          console.log('Opening chat window...');
+        });
+      }
+    });
+    </script>
+    </body>
+    </html>
